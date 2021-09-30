@@ -4,8 +4,8 @@
   "description": "",
   "main": "./dist/main.js",
   "scripts": {
-    "build": "webpack ./src/* --mode='production'",
-    "dev": "webpack ./src/* -w --mode='development'",
+    "build": "webpack ./src/index1.js ./src/index2.js ./src/index3.js --mode='production'",
+    "dev": "webpack ./src/index1.js ./src/index2.js ./src/index3.js -w --mode='development'",
     "start": "node ."
   },
   "keywords": [],
