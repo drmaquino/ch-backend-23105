@@ -15,8 +15,7 @@ app.get('/', (req, res) => {
   if (req.session.contador) {
     req.session.contador++
     res.send(`${getNombreSession(req)} visitaste la página ${req.session.contador} veces.`)
-  }
-  else {
+  } else {
     req.session.nombre = req.query.nombre
     req.session.contador = 1
     res.send(`Te damos la bienvenida ${getNombreSession(req)}`)
