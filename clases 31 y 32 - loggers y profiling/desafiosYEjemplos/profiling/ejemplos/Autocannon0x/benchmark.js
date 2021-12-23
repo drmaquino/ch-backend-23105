@@ -8,7 +8,7 @@ function run(url) {
   const inst = autocannon({
     url,
     connections: 100,
-    duration: 20
+    duration: 20,
   })
 
   autocannon.track(inst, { outputStream })
@@ -21,5 +21,5 @@ function run(url) {
 
 console.log('Running all benchmarks in parallel ...')
 
-run('http://localhost:8080/auth-bloq?username=marian&password=qwerty123')
+// run('http://localhost:8080/auth-bloq?username=marian&password=qwerty123')
 run('http://localhost:8080/auth-nobloq?username=marian&password=qwerty123')

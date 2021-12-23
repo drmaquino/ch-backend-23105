@@ -1,0 +1,115 @@
+Statistical profiling result from bloq.log, (50785 ticks, 1 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+  50564   99.6%          /home/drmaquino/.nvm/versions/node/v17.0.1/bin/node
+     17    0.0%          /usr/lib/x86_64-linux-gnu/libc-2.31.so
+      4    0.0%          /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+      7    0.0%    3.5%  LazyCompile: *normalizeString node:path:66:25
+      4    0.0%    2.0%  Function: ^emit node:events:340:44
+      3    0.0%    1.5%  LazyCompile: *next /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-23105/clases 31 y 32 - loggers y profiling/desafiosYEjemplos/profiling/ejemplos/Profiling/node_modules/express/lib/router/index.js:176:16
+      2    0.0%    1.0%  Function: ^parse /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-23105/clases 31 y 32 - loggers y profiling/desafiosYEjemplos/profiling/ejemplos/Profiling/node_modules/content-type/index.js:106:16
+      2    0.0%    1.0%  Function: ^normalizeParseOptions /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-23105/clases 31 y 32 - loggers y profiling/desafiosYEjemplos/profiling/ejemplos/Profiling/node_modules/qs/lib/parse.js:189:59
+      2    0.0%    1.0%  Function: ^next /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-23105/clases 31 y 32 - loggers y profiling/desafiosYEjemplos/profiling/ejemplos/Profiling/node_modules/express/lib/router/index.js:176:16
+      2    0.0%    1.0%  Function: ^handle /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-23105/clases 31 y 32 - loggers y profiling/desafiosYEjemplos/profiling/ejemplos/Profiling/node_modules/express/lib/router/index.js:136:31
+      2    0.0%    1.0%  Function: ^fromStringFast node:buffer:412:24
+      1    0.0%    0.5%  RegExp: ^[!#$%&'*+.^_`|~0-9A-Za-z-]+\/[!#$%&'*+.^_`|~0-9A-Za-z-]+$
+      1    0.0%    0.5%  LazyCompile: *processTicksAndRejections node:internal/process/task_queues:68:35
+      1    0.0%    0.5%  LazyCompile: *fastparse /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-23105/clases 31 y 32 - loggers y profiling/desafiosYEjemplos/profiling/ejemplos/Profiling/node_modules/parseurl/index.js:95:20
+      1    0.0%    0.5%  Function: ^slowCases node:internal/util:165:19
+      1    0.0%    0.5%  Function: ^setCharset /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-23105/clases 31 y 32 - loggers y profiling/desafiosYEjemplos/profiling/ejemplos/Profiling/node_modules/express/lib/utils.js:250:41
+      1    0.0%    0.5%  Function: ^send /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-23105/clases 31 y 32 - loggers y profiling/desafiosYEjemplos/profiling/ejemplos/Profiling/node_modules/express/lib/response.js:107:25
+      1    0.0%    0.5%  Function: ^processPromiseRejections node:internal/process/promises:203:34
+      1    0.0%    0.5%  Function: ^onstat /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-23105/clases 31 y 32 - loggers y profiling/desafiosYEjemplos/profiling/ejemplos/Profiling/node_modules/send/index.js:721:33
+      1    0.0%    0.5%  Function: ^handle /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-23105/clases 31 y 32 - loggers y profiling/desafiosYEjemplos/profiling/ejemplos/Profiling/node_modules/express/lib/router/layer.js:86:49
+      1    0.0%    0.5%  Function: ^getHeader node:_http_outgoing:590:57
+      1    0.0%    0.5%  Function: ^get node:internal/streams/duplex:100:8
+      1    0.0%    0.5%  Function: ^fresh /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-23105/clases 31 y 32 - loggers y profiling/desafiosYEjemplos/profiling/ejemplos/Profiling/node_modules/parseurl/index.js:153:16
+      1    0.0%    0.5%  Function: ^finalhandler /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-23105/clases 31 y 32 - loggers y profiling/desafiosYEjemplos/profiling/ejemplos/Profiling/node_modules/finalhandler/index.js:77:23
+      1    0.0%    0.5%  Function: ^fastparse /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-23105/clases 31 y 32 - loggers y profiling/desafiosYEjemplos/profiling/ejemplos/Profiling/node_modules/parseurl/index.js:95:20
+      1    0.0%    0.5%  Function: ^clearTimeout node:timers:184:22
+      1    0.0%    0.5%  Function: ^clearBuffer node:internal/streams/writable:530:21
+      1    0.0%    0.5%  Function: ^allocate node:buffer:397:18
+      1    0.0%    0.5%  Function: ^_write node:internal/streams/writable:284:16
+      1    0.0%    0.5%  Function: ^_send node:_http_outgoing:319:49
+      1    0.0%    0.5%  Function: ^_addListener node:events:418:22
+      1    0.0%    0.5%  Function: ^<anonymous> node:internal/validators:100:40
+      1    0.0%    0.5%  Function: ^<anonymous> /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-23105/clases 31 y 32 - loggers y profiling/desafiosYEjemplos/profiling/ejemplos/Profiling/node_modules/express/lib/router/index.js:275:64
+
+ [C++]:
+   ticks  total  nonlib   name
+     51    0.1%   25.5%  __write
+     21    0.0%   10.5%  fwrite
+     15    0.0%    7.5%  epoll_pwait
+     12    0.0%    6.0%  __GI___pthread_mutex_unlock
+      9    0.0%    4.5%  _IO_file_xsputn
+      7    0.0%    3.5%  std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)
+      5    0.0%    2.5%  __pthread_cond_signal
+      4    0.0%    2.0%  __lll_lock_wait
+      4    0.0%    2.0%  __libc_malloc
+      3    0.0%    1.5%  std::ostream::sentry::~sentry()
+      3    0.0%    1.5%  std::ostream::sentry::sentry(std::ostream&)
+      3    0.0%    1.5%  __pthread_cond_wait
+      3    0.0%    1.5%  __mprotect
+      2    0.0%    1.0%  std::ostream::operator<<(int)
+      2    0.0%    1.0%  __libc_read
+      1    0.0%    0.5%  operator new(unsigned long)
+      1    0.0%    0.5%  fputc
+      1    0.0%    0.5%  cfree
+      1    0.0%    0.5%  __munmap
+      1    0.0%    0.5%  __libc_write
+      1    0.0%    0.5%  __errno_location
+      1    0.0%    0.5%  __clock_gettime
+      1    0.0%    0.5%  __GI___pthread_mutex_lock
+      1    0.0%    0.5%  _IO_default_xsputn
+
+ [Summary]:
+   ticks  total  nonlib   name
+     46    0.1%   23.0%  JavaScript
+    153    0.3%   76.5%  C++
+     96    0.2%   48.0%  GC
+  50585   99.6%          Shared libraries
+      1    0.0%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+     24   34.3%    0.0%  __write
+     20   28.6%    0.0%  fwrite
+      6    8.6%    0.0%  std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)
+      6    8.6%    0.0%  _IO_file_xsputn
+      3    4.3%    0.0%  std::ostream::sentry::~sentry()
+      2    2.9%    0.0%  std::ostream::sentry::sentry(std::ostream&)
+      2    2.9%    0.0%  std::ostream::operator<<(int)
+      2    2.9%    0.0%  __GI___pthread_mutex_unlock
+      1    1.4%    0.0%  operator new(unsigned long)
+      1    1.4%    0.0%  __mprotect
+      1    1.4%    0.0%  __libc_malloc
+      1    1.4%    0.0%  __clock_gettime
+      1    1.4%    0.0%  _IO_default_xsputn
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+  50564   99.6%  /home/drmaquino/.nvm/versions/node/v17.0.1/bin/node
+  50140   99.2%    /home/drmaquino/.nvm/versions/node/v17.0.1/bin/node
+  48488   96.7%      Function: ^pbkdf2Sync node:internal/crypto/pbkdf2:68:20
+  48292   99.6%        Function: ^<anonymous> /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-23105/clases 31 y 32 - loggers y profiling/desafiosYEjemplos/profiling/ejemplos/Profiling/server.js:32:23
+  48292  100.0%          Function: ^handle /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-23105/clases 31 y 32 - loggers y profiling/desafiosYEjemplos/profiling/ejemplos/Profiling/node_modules/express/lib/router/layer.js:86:49
+  47792   99.0%            Function: ^next /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-23105/clases 31 y 32 - loggers y profiling/desafiosYEjemplos/profiling/ejemplos/Profiling/node_modules/express/lib/router/route.js:114:16
+    500    1.0%            LazyCompile: ~next /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-23105/clases 31 y 32 - loggers y profiling/desafiosYEjemplos/profiling/ejemplos/Profiling/node_modules/express/lib/router/route.js:114:16
+    996    2.0%      LazyCompile: ~pbkdf2Sync node:internal/crypto/pbkdf2:68:20
+    886   89.0%        LazyCompile: ~<anonymous> /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-23105/clases 31 y 32 - loggers y profiling/desafiosYEjemplos/profiling/ejemplos/Profiling/server.js:32:23
+    672   75.8%          Function: ^handle /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-23105/clases 31 y 32 - loggers y profiling/desafiosYEjemplos/profiling/ejemplos/Profiling/node_modules/express/lib/router/layer.js:86:49
+    672  100.0%            LazyCompile: ~next /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-23105/clases 31 y 32 - loggers y profiling/desafiosYEjemplos/profiling/ejemplos/Profiling/node_modules/express/lib/router/route.js:114:16
+    214   24.2%          LazyCompile: ~handle /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-23105/clases 31 y 32 - loggers y profiling/desafiosYEjemplos/profiling/ejemplos/Profiling/node_modules/express/lib/router/layer.js:86:49
+    214  100.0%            LazyCompile: ~next /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-23105/clases 31 y 32 - loggers y profiling/desafiosYEjemplos/profiling/ejemplos/Profiling/node_modules/express/lib/router/route.js:114:16
+    110   11.0%        LazyCompile: ~<anonymous> /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-23105/clases 31 y 32 - loggers y profiling/desafiosYEjemplos/profiling/ejemplos/Profiling/server.js:14:21
+    110  100.0%          LazyCompile: ~handle /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-23105/clases 31 y 32 - loggers y profiling/desafiosYEjemplos/profiling/ejemplos/Profiling/node_modules/express/lib/router/layer.js:86:49
+    110  100.0%            LazyCompile: ~next /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-23105/clases 31 y 32 - loggers y profiling/desafiosYEjemplos/profiling/ejemplos/Profiling/node_modules/express/lib/router/route.js:114:16
+
