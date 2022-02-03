@@ -5,6 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "tdd": "nodemon --exec mocha index.test.js",
     "test": "mocha index.test.js",
     "test-manual": "node index.prueba.manual.js"
   },

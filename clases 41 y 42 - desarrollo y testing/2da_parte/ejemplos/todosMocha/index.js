@@ -1,52 +1,52 @@
 import fs from 'fs'
 
 class Todos {
+  constructor() {
+    this.todos = []
+  }
 
-    constructor() {
-        this.todos = []
+  list() {
+    return this.todos
+  }
+
+  add(title) {
+    const todo = {
+      title,
+      complete: false,
+    }
+    this.todos.push(todo)
+  }
+
+  complete(title) {
+    if (this.todos.length === 0) {
+      throw new Error('No hay tareas')
     }
 
-    list() {
-        return this.todos
+    const todoFound = this.todos.find(t => t.title === title)
+
+    if (!todoFound) {
+      throw new Error('Tarea no encontrada')
     }
 
-    add(title) {
-        const todo = {
-            title,
-            complete: false
-        }
-        this.todos.push(todo)
-    }
+    todoFound.complete = true
+  }
 
-    complete(title) {
-        if (this.todos.length === 0) {
-            throw new Error('No hay tareas')
-        }
+  saveToFileCb(cb) {
+    let fileContents = ''
+    this.todos.forEach(todo => {
+      fileContents += `${todo.title},${todo.complete}`
+    })
+    fs.writeFile('todos.txt', fileContents, cb)
+  }
 
-        const todoFound = this.todos.find(t => t.title === title)
+  saveToFilePromise() {
+    let fileContents = ''
+    this.todos.forEach(todo => {
+      fileContents += `${todo.title},${todo.complete}`
+    })
 
-        if (!todoFound) { throw new Error('Tarea no encontrada') }
-
-        todoFound.complete = true
-    }
-
-    saveToFileCb(cb) {
-        let fileContents = ''
-        this.todos.forEach(todo => {
-            fileContents += `${todo.title},${todo.complete}`
-        })
-        fs.writeFile('todos.txt', fileContents, cb)
-    }
-
-    saveToFilePromise() {
-        let fileContents = ''
-        this.todos.forEach(todo => {
-            fileContents += `${todo.title},${todo.complete}`
-        })
-
-        return fs.promises.writeFile('todos.txt', fileContents)
-    }
-
+    return fs.promises.writeFile('todos.txt', fileContents)
+  }
 }
 
 export default Todos

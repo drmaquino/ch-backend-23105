@@ -1,0 +1,87 @@
+class FechaNativa {
+
+ constructor(fechaStr) {
+ 
+ }
+}
+
+
+
+const fecha = new FechaNativa('01/01/2022')
+
+=================================================
+
+class FechaSuper {
+
+ constructor(dia, mes, anio) {
+ 
+ }
+}
+
+
+const fecha = new FechaSuper('01', '01', '2022')
+
+=================================================
+
+class Fecha {
+    verDia
+    verMes
+    comparar
+}
+
+=================================================
+
+Factory
+
+class FechaFactory {
+
+    static crearFecha() {
+      const fecha = new Fecha(new FechaNativa('01/01/2022'))
+      // const fecha = new FechaSuper('01', '01', '2022')
+      return fecha
+    }
+    
+}
+
+=================================================
+// carpeta 'EmplDao'
+// index.js
+
+let dao
+
+switch(config.MODO) {
+case 'PROD':
+    dao = new EmplMongoDbDao(config.MONGOURL)
+    break
+default:
+    dao = new EmplArchivosDao(config.DATA_PATH)
+}
+
+export default class EmpleadosDaoFactory {
+
+    getDao() {
+      return dao
+    }
+}
+
+=================================================
+
+NEGOCIO
+
+contratarPersona(dtoFecha, dtoDatosEmpleado) {
+ const fecha = FechaFactory.crearFecha(dia, mes , anio)
+ const id = new Id()
+ const empl = new Empleado(id, dtoDatosEmpleado, fecha)
+ const dao = EmpleadosDaoFactory.getDao()
+ await dao.guardar(empl)
+}
+
+==================================================
+
+Empleado {
+
+  constructor(id, nombre, fechaIngreso) {
+    
+  }
+
+}
